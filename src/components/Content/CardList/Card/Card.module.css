@@ -1,0 +1,63 @@
+.cardContainer {
+	width: 100%;
+	min-height: 100px;
+	background-color: #575757;
+	border-radius: 12px;
+	padding: 12px;
+	box-sizing: border-box;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.date {
+	width: 100px;
+	height: 100px;
+	background-color: #1a1a1a;
+	color: #fff;
+	border-radius: 12px;
+	padding: 12px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 16px;
+}
+
+.dateDesc {
+	margin: 0;
+	padding-bottom: 12px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.dateDescDay {
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 4px;
+}
+
+.cardDesc {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	flex: 1;
+}
+
+.price {
+	border-radius: 12px;
+	padding: 8px 16px;
+	background-color: #862796;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	border: 1px solid #fff;
+	outline: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	cursor: pointer;
+	margin-right: 4px;
+}

@@ -1,0 +1,12 @@
+.chartItem {
+	width: 21px;
+	height: 178px;
+	margin: 8px 0;
+	background-color: #BAA5ED;
+}
+
+.desc {
+	font-family: 'Roboto', sans-serif;
+	color: #1a1a1a;
+	margin-bottom: 8px;
+}

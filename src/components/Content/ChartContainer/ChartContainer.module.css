@@ -1,0 +1,9 @@
+.chartContainer {
+	min-height: 100px;
+	background-color: #E1CAE4;
+	border-radius: 12px;
+	padding: 16px 24px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}

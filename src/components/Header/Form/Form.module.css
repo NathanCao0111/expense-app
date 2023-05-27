@@ -1,0 +1,52 @@
+.form {
+	width: 100%;
+}
+
+.inputContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.label {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	min-width: 100px;
+}
+
+.input {
+	flex: 1;
+	height: 30px;
+	border-radius: 12px;
+	padding: 0 12px;
+	border: none;
+	outline: none;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+	font-family: 'Roboto', sans-serif;
+}
+
+.btnContainer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	padding: 8px 16px;
+	border-radius: 12px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	font-family: 'Roboto', sans-serif;
+	margin-left: 16px;
+	cursor: pointer;
+}
+
+.btnPrimary {
+	background-color: #862796;
+	color: #fff;
+	font-weight: 700;
+}

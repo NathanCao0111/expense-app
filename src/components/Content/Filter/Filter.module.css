@@ -1,0 +1,42 @@
+.filter {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.heading {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+	color: #fff;
+}
+
+.selectContainer {
+	position: relative;
+	cursor: pointer;
+}
+
+.select {
+	border: none;
+	outline: none;
+	padding: 8px 32px;
+	border-radius: 6px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 21px;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+.selectContainer::after {
+	content: '';
+	border-width: 6px;
+	border-style: solid;
+	border-color: #1a1a1a transparent transparent transparent;
+	position: absolute;
+	top: 15px;
+	right: 8px;
+}
