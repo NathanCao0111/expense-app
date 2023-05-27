@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import StoreContext from 'react'
+import StoreContext from '../../../store/Context'
 import clsx from "clsx"
 import styles from './Form.module.css'
 
