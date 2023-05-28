@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useRef } from "react"
 import StoreContext from '../../../store/Context'
 import clsx from "clsx"
 import styles from './Form.module.css'
@@ -7,7 +7,8 @@ import styles from './Form.module.css'
 function Form(props) {
 	const { inputContext, cardsContext } = useContext(StoreContext)
 	const [input, setInput] = inputContext
-	const [cards, setCards] = cardsContext
+	const [, setCards] = cardsContext
+	const nameInputRef = useRef()
 
 	const handleBtnCancel = () => {
 		props.onDisplay(false)
@@ -15,6 +16,12 @@ function Form(props) {
 
 	const handleBtnAdd = () => {
 		setCards(prev => [...prev, input])
+		setInput({
+			name: '',
+			amount: '',
+			date: ''
+		})
+		nameInputRef.current.focus()
 	}
 
 	return (
@@ -30,6 +37,7 @@ function Form(props) {
 					name: e.target.value
 				}))}
 				className={styles.input}
+				ref={nameInputRef}
 				/>
 			</div>
 			<div className={styles.inputContainer}>

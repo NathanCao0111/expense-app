@@ -5,7 +5,7 @@ import StoreContext from '../../../store/Context'
 
 function CardList() {
   const { cardsContext } = useContext(StoreContext)
-  const [cards, setCards] = cardsContext
+  const [cards, ] = cardsContext
 
   return (
 		<div className={styles.cardList}>
