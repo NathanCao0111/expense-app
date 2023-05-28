@@ -10,25 +10,19 @@ function Provider({ children }) {
 
 	const [cards, setCards] = useState([
     {
-      day: 16,
-      month: "January",
-      year: 2023,
-      description: "Some books",
-      price: "$50",
+      date: '16 January 2023',
+      name: "Some books",
+      amount: "$50",
     },
     {
-      day: 10,
-      month: "April",
-      year: 2023,
-      description: "Electricity Bill",
-      price: "$75",
+      date: '10 April 2023',
+      name: "Electricity Bill",
+      amount: "$75",
     },
     {
-      day: 8,
-      month: "May",
-      year: 2023,
-      description: "New Bike",
-      price: "$100",
+      date: '8 May 2023',
+      name: "New Bike",
+      amount: "$100",
     },
   ])
 

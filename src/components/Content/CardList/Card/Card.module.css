@@ -21,24 +21,20 @@
 	padding: 12px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	margin-right: 16px;
 }
 
 .dateDesc {
 	margin: 0;
-	padding-bottom: 12px;
 	font-family: 'Roboto', sans-serif;
-}
-
-.dateDescDay {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 700;
-	margin-top: 4px;
+	line-height: 24px;
 }
 
-.cardDesc {
+.name {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
 	font-size: 24px;
@@ -46,7 +42,7 @@
 	flex: 1;
 }
 
-.price {
+.amount {
 	border-radius: 12px;
 	padding: 8px 16px;
 	background-color: #862796;

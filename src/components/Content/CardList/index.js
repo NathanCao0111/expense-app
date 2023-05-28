@@ -13,11 +13,9 @@ function CardList() {
 			cards.map((element, index) => {
 				return <Card 
 				key={index}
-				day={element.day}
-				month={element.month}
-				year={element.year}
-				description={element.description}
-				price={element.price}
+				date={element.date}
+				name={element.name}
+				amount={element.amount}
 				/>
 			})
 		}
