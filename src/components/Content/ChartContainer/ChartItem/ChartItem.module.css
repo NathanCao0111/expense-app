@@ -1,12 +1,22 @@
 .chartItem {
-	width: 21px;
-	height: 178px;
-	margin: 8px 0;
-	background-color: #BAA5ED;
+  width: 21px;
+  height: 178px;
+  margin: 8px 0;
+  background-color: #baa5ed;
+  position: relative;
+  overflow: hidden;
 }
 
 .desc {
-	font-family: 'Roboto', sans-serif;
-	color: #1a1a1a;
-	margin-bottom: 8px;
+  font-family: 'Roboto', sans-serif;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.chartActive {
+  width: 21px;
+  background-color: #862796;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

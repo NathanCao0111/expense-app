@@ -20,7 +20,7 @@ function Content() {
   return (
     <div className={styles.content}>
       <Filter year={year} setYear={setYear} />
-      <ChartContainer />
+      <ChartContainer filterYearData={filterYearData} />
       <CardList filterYearData={filterYearData} />
     </div>
   );

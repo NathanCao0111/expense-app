@@ -4,8 +4,8 @@ import Card from './Card';
 function CardList({ filterYearData }) {
   return (
     <div className={styles.cardList}>
-      {filterYearData.map((element, index) => {
-        return <Card key={index} date={element.date} name={element.name} amount={element.amount} />;
+      {filterYearData.map((element) => {
+        return <Card key={element.id} date={element.date} name={element.name} amount={element.amount} />;
       })}
     </div>
   );

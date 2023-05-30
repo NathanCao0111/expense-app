@@ -8,6 +8,7 @@ function Form(props) {
   const [, setData] = dataContext;
 
   const [input, setInput] = useState({
+    id: Date.now(),
     name: '',
     amount: '',
     date: '',
@@ -17,6 +18,7 @@ function Form(props) {
   const handleBtnCancel = () => {
     props.onDisplay(false);
     setInput({
+      id: '',
       name: '',
       amount: '',
       date: '',
@@ -26,6 +28,7 @@ function Form(props) {
   const handleBtnAdd = () => {
     setData((prev) => [...prev, input]);
     setInput({
+      id: '',
       name: '',
       amount: '',
       date: '',
@@ -60,7 +63,7 @@ function Form(props) {
           onChange={(e) =>
             setInput((prev) => ({
               ...prev,
-              amount: e.target.value,
+              amount: Number(e.target.value),
             }))
           }
           className={styles.input}
